@@ -47,6 +47,10 @@ body {
   background-color: var(--secondary-background-color);
 }
 
+.no-padding-bottom {
+  padding-bottom: 0;
+}
+
 .header {
   border-bottom: 1px solid var(--header-line-color);
 }
@@ -148,13 +152,14 @@ body {
 
 .hero {
   text-align: center;
-  background-image: url("images/box1.jpg");
-  background-color: salmon;
+  /* background-image: url("../images/hero-img.jpg"); */
+  background-color: #2f303a; /* ТИМЧАСОВО  */
+  padding: 200px 0;
 }
 
 .hero-title {
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   font-size: 44px;
   font-weight: 900;
@@ -163,7 +168,6 @@ body {
   text-transform: uppercase;
   
   color: var(--primary-background-color);
-  background-color: var(--banner-color);  /* ТИМЧАСОВО!!! */
 
 }
 
@@ -179,8 +183,9 @@ body {
   letter-spacing: 0.06em;
   text-align: center;
 
+  border-style: none;
   border-radius: 4px;
-  border-color: transparent;
+  
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
  
@@ -241,6 +246,7 @@ body {
 .section-features-list {
   display: flex;
   column-gap: 30px;
+ 
 }
 
 .section-features-list-header {
@@ -261,7 +267,7 @@ body {
 
 /* sec 3, 4 Назва секції - відима */
 .section-name {
-  margin: 0 0 50px;
+  margin-bottom: 50px;
 
   font-size: 36px;
   font-weight: 700;
@@ -286,8 +292,9 @@ body {
 
 /* sec4 Картка працівника */
 .team-mate {
-  height: 428px;
+  height: 368px;  /* 428px; дз-4 */
   background-color: var(--logo-color-contrast);
+  
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
@@ -299,9 +306,14 @@ body {
   display: block;
 }
 
+.team-mate-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
 .team-mate-name {
   margin: 0;
-  padding-top: 30px;
 
   font-weight: 500;
   font-size: 16px;
@@ -312,7 +324,6 @@ body {
 .team-mate-position {
   margin: 0;
   padding-top: 10px;
-  padding-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.19em;
@@ -356,6 +367,10 @@ body {
 .studio-address {
   padding-top: 20px;
   padding-bottom: 60px;
+}
+
+.footer-addr-block:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* .footer-addr-text-style1 {
@@ -409,20 +424,32 @@ body {
 
 }
 
+.portfolio-item {
+  height: 404px;
+  background-color: var(--logo-color-contrast);
+  
+}
+
+.portfolio-list img {
+  display: block;
+}
+
+.portfolio-info {
+  padding: 20px 24px;
+
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+}
+
 .portfolio-card-link {
   color: var(--title-text-color);
   text-decoration: none;
 }
 
-.portfolio-list img {
-  display:block;
-}
-
 .portfolio-item-title {
   margin: 0;
-  padding: 20px 24px 4px;
-  border-left: 1px solid var(--border-color);
-  border-right: 1px solid var(--border-color);
+  padding-bottom: 4px;
 
   font-weight: 700;
   font-size: 18px;
@@ -433,12 +460,8 @@ body {
 
 .portfolio-industry {
   margin: 0;
-  padding: 0 24px 20px;
-  border-left: 1px solid var(--border-color);
-  border-right: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
   
   font-size: 16px;
-  line-height: 1.08em;
+  line-height: 1.875em;
   color: var(--article-text-color)
 }
