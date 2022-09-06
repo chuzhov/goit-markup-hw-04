@@ -7,7 +7,7 @@
   --secondary-background-color: #f5f4fa;
   --border-color: #eeeeee;
 
-  --header-line-color: #ECECEC;
+  --header-line-color: #ececec;
   --banner-color: #2f303a;
 
   --logo-color-head: #2196f3;
@@ -15,16 +15,14 @@
   --logo-color-contrast: #ffffff;
 }
 
-
 /* БАЗОВІ ЕЛЕМЕНТИ ДІЗАЙНУ */
 body {
-  
-  font-family: "Roboto", "Helvetica Neue", sans-serif;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
   font-size: 14px;
   /* font-weight: 400; browser default*/
   /* font-style: normal; */
-  line-height: 1.17em;
-  letter-spacing: 0.03em;  
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 
   color: var(--title-text-color);
   background-color: var(--primary-background-color);
@@ -40,7 +38,6 @@ body {
 
 .section {
   padding: 94px 0;
-  
 }
 
 .background-color {
@@ -59,11 +56,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 /* Допоможний клас, що видаляє плашки у списках */
-.no-bullets  {
+.no-bullets {
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -74,7 +70,7 @@ body {
   font-family: 'Raleway', 'Arial', sans-serif;
   font-size: 26px;
   font-weight: 700;
-  line-height: 1.19em;
+  line-height: 1.19;
   text-decoration: none;
 }
 .text-logo-url .logo-color1 {
@@ -84,35 +80,38 @@ body {
   color: var(--logo-color-tail);
 }
 .text-logo-url .logo-color3 {
-  color: var(--logo-color-contrast);  /*для футера */
+  color: var(--logo-color-contrast); /*для футера */
 }
 
 /* Розмічаємо головне меню */
 
-.main-menu {                          /* флекс із лого і меню - щоб поставити їх в один рядок*/
+.main-menu {
+  /* флекс із лого і меню - щоб поставити їх в один рядок*/
   display: flex;
   align-items: center;
 }
 
-.main-menu-list {                     /* робимо горизонтальним меню */
+.main-menu-list {
+  /* робимо горизонтальним меню */
   display: flex;
-  margin-left: 93px;                  /* відступ до логотипу  */
+  margin-left: 93px; /* відступ до логотипу  */
 }
 
 .main-menu-item > a {
-  display: block;                     /* потрібно щоб встановити верт.розміри елементам меню */
-  padding-top: 32px;                  /* встановлюємо розмір хедера відступами вниз та вверх */
-  padding-bottom: 32px;               /* також буде збільшений розмір реакції на ховер */
+  display: block; /* потрібно щоб встановити верт.розміри елементам меню */
+  padding-top: 32px; /* встановлюємо розмір хедера відступами вниз та вверх */
+  padding-bottom: 32px; /* також буде збільшений розмір реакції на ховер */
 
   font-weight: 500;
-  line-height: 1.14em;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
   text-shadow: none;
 
-  color: var(--title-text-color);                   /* не наслідується бо посилання */
+  color: var(--title-text-color); /* не наслідується бо посилання */
 }
-.main-menu-list .main-menu-item:not(:last-child) {  /* відступи між елементами крім останнього */
+.main-menu-list .main-menu-item:not(:last-child) {
+  /* відступи між елементами крім останнього */
   margin-right: 50px;
 }
 
@@ -130,7 +129,6 @@ body {
 .link-email-phone {
   display: flex;
   margin-left: auto;
-  
 }
 
 .link-email-phone li:not(:last-child) {
@@ -163,32 +161,30 @@ body {
 
   font-size: 44px;
   font-weight: 900;
-  line-height: 1.36em;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  
-  color: var(--primary-background-color);
 
+  color: var(--primary-background-color);
 }
 
 /* Кнопка замовлення */
 .button {
   padding: 10px 32px;
   min-width: 216px;
-  
+
   font-family: inherit;
   font-size: 16px;
   font-weight: 700;
-  line-height: 1.88em;
+  line-height: 1.88;
   letter-spacing: 0.06em;
   text-align: center;
 
   border-style: none;
   border-radius: 4px;
-  
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
- 
 }
 .button.primary {
   color: var(--primary-background-color);
@@ -206,7 +202,7 @@ body {
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.63em;
+  line-height: 1.63;
   letter-spacing: 0.03em;
 
   box-shadow: none;
@@ -218,14 +214,12 @@ body {
   color: var(--primary-background-color);
   background-color: var(--accent-color);
   border-style: none;
-  
 }
 
 .filter-button.secondary {
   color: var(--title-text-color);
   background-color: var(--secondary-background-color);
   border-style: none;
-  
 }
 
 /* Елемент фільтру при ховері чі у фокусі */
@@ -246,7 +240,6 @@ body {
 .section-features-list {
   display: flex;
   column-gap: 30px;
- 
 }
 
 .section-features-list-header {
@@ -254,13 +247,13 @@ body {
 
   font-size: 14px;
   font-weight: 700;
-  line-height: 1.14em;
- 
+  line-height: 1.14;
+
   text-transform: uppercase;
 }
 .section-features-list-content {
   margin: 0;
-  line-height: 1.71em;
+  line-height: 1.71;
 
   color: var(--article-text-color);
 }
@@ -292,14 +285,13 @@ body {
 
 /* sec4 Картка працівника */
 .team-mate {
-  height: 368px;  /* 428px; дз-4 */
+  height: 368px; /* 428px; дз-4 */
   background-color: var(--logo-color-contrast);
-  
+
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
-              0px 1px 1px rgba(0, 0, 0, 0.14), 
-              0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-mate-pic {
@@ -309,7 +301,6 @@ body {
 .team-mate-info {
   padding-top: 30px;
   padding-bottom: 30px;
-
 }
 
 .team-mate-name {
@@ -317,7 +308,7 @@ body {
 
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19em;
+  line-height: 1.19;
   text-align: center;
 }
 
@@ -326,7 +317,7 @@ body {
   padding-top: 10px;
 
   font-size: 16px;
-  line-height: 1.19em;
+  line-height: 1.19;
   text-align: center;
 
   color: var(--article-text-color);
@@ -350,58 +341,55 @@ body {
   height: 92px;
 
   border: 1px solid #afb1b8;
- 
+
   cursor: pointer;
 }
 
-/* Розмічаємо Підвал --------------------------------------------------------- */
+/* -------- Розмічаємо Підвал --------------------------------------------------------- */
 
 .page-footer {
+  padding: 60px 0;
+
   background-color: var(--banner-color);
 }
 
-.studio-logo {
-  padding-top: 60px;
-}
-
 .studio-address {
-  padding-top: 20px;
-  padding-bottom: 60px;
+  margin-top: 20px;              /*відступ від блоку адреси до лого */
 }
 
-.footer-addr-block:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-/* .footer-addr-text-style1 {
-  padding-top: 20px;
-} */
 
 .footer-addr-text-style1 a {
-  line-height: 1.71em;
+  margin-bottom: 9px;
+
+  line-height: 1.71;
   text-decoration: none;
   font-style: normal;
 
-  color: var(--logo-color-contrast)
+  color: var(--logo-color-contrast);
 }
+
 .footer-addr-text-style2 a {
-  line-height: 1.71em;
+
+  line-height: 1.71;
   text-decoration: none;
   font-style: normal;
 
   color: var(--primary-background-color-transp);
 }
 
+.footer-addr-block li:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 /* виділяємо посилання у підвалі */
 .footer-addr-text-style1 a:hover,
 .footer-addr-text-style1 a:focus,
 .footer-addr-text-style2 a:hover,
-.footer-addr-text-style2 a:focus
-{
+.footer-addr-text-style2 a:focus {
   color: var(--accent-color);
 }
 
-/* === СТОРІНКА ПОРТФОЛІО =================================== */
+/* ==================== СТОРІНКА ПОРТФОЛІО =================================== */
 /* Стилізуємо портфоліо */
 
 /* Фільтр робіт */
@@ -412,7 +400,7 @@ body {
 }
 .portfolio-filter-list li:not(:last-child) {
   margin-right: 8px;
-} 
+}
 
 /* Перелік робіт  3х3  */
 .portfolio-list {
@@ -421,13 +409,11 @@ body {
   flex-wrap: wrap;
   row-gap: 30px;
   column-gap: 30px;
-
 }
 
 .portfolio-item {
   height: 404px;
   background-color: var(--logo-color-contrast);
-  
 }
 
 .portfolio-list img {
@@ -455,13 +441,12 @@ body {
   font-size: 18px;
   line-height: 2em;
   letter-spacing: 0.06em;
-
 }
 
 .portfolio-industry {
   margin: 0;
-  
+
   font-size: 16px;
   line-height: 1.875em;
-  color: var(--article-text-color)
+  color: var(--article-text-color);
 }
