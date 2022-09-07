@@ -2,7 +2,8 @@
   --title-text-color: #212121;
   --article-text-color: #757575;
   --accent-color: #2196f3;
-  --primary-background-color: #ffffff;
+  --primary-background-color: rgb(255, 255, 255);
+  --hero-background-color: #d9d9d9;
   --primary-background-color-transp: rgba(255, 255, 255, 0.6);
   --secondary-background-color: #f5f4fa;
   --border-color: #eeeeee;
@@ -26,6 +27,12 @@ body {
 
   color: var(--title-text-color);
   background-color: var(--primary-background-color);
+}
+
+p, h1, h2, h3, h4, h5 {
+  margin:       0;
+  padding:      0;
+  margin-block: 0;
 }
 
 .container {
@@ -149,10 +156,15 @@ body {
 /* MAIN BANNER */
 
 .hero {
-  text-align: center;
-  /* background-image: url("../images/hero-img.jpg"); */
-  background-color: #2f303a; /* ТИМЧАСОВО  */
   padding: 200px 0;
+  max-width: 1600px;
+
+  text-align: center;
+
+  background-color: var(--hero-background-color); 
+  /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+  background-image: url("../images/hero-img.jpg");
+  
 }
 
 .hero-title {
@@ -260,6 +272,7 @@ body {
 
 /* sec 3, 4 Назва секції - відима */
 .section-name {
+  margin-top: 0;
   margin-bottom: 50px;
 
   font-size: 36px;
@@ -299,8 +312,7 @@ body {
 }
 
 .team-mate-info {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 10px;
 }
 
 .team-mate-name {
@@ -313,8 +325,7 @@ body {
 }
 
 .team-mate-position {
-  margin: 0;
-  padding-top: 10px;
+  margin-top: 10px;
 
   font-size: 16px;
   line-height: 1.19;
@@ -434,8 +445,8 @@ body {
 }
 
 .portfolio-item-title {
-  margin: 0;
-  padding-bottom: 4px;
+  
+  margin-bottom: 4px;
 
   font-weight: 700;
   font-size: 18px;
