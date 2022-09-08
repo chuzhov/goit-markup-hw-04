@@ -8,6 +8,7 @@
   --primary-background-color-transp: rgba(255, 255, 255, 0.6);
   --secondary-background-color: #f5f4fa;
   --border-color: #eeeeee;
+  --button-border-color: #000000;
 
   --header-line-color: #ececec;
   --footer-color: #2f303a;
@@ -189,7 +190,7 @@ p, h1, h2, h3, h4, h5 {
 
 /* Кнопка замовлення */
 .button {
-  padding: 10px 32px;
+  padding: 9px 31px;
   min-width: 216px;
 
   font-family: inherit;
@@ -199,10 +200,10 @@ p, h1, h2, h3, h4, h5 {
   letter-spacing: 0.06em;
   text-align: center;
 
-  border-style: none;
+  border: 1px solid var(--button-border-color);
   border-radius: 4px;
 
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
   cursor: pointer;
 }
 .button.primary {
@@ -261,8 +262,35 @@ p, h1, h2, h3, h4, h5 {
   column-gap: 30px;
 }
 
+/* Задаємо шапки над кожною перевагою */
+.features-list-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--secondary-background-color);
+}
+
+.icon-radar::before {
+  background-image: url(../images/svg/radar.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/svg/clock.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/svg/clock.svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/svg/diagram.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/svg/astronaut.svg);
+}
+
 .section-features-list-header {
-  margin: 0 0 10px;
+  margin: 30px 0 10px;
 
   font-size: 14px;
   font-weight: 700;
@@ -305,7 +333,7 @@ p, h1, h2, h3, h4, h5 {
 
 /* sec4 Картка працівника */
 .team-mate {
-  height: 368px; /* 428px; дз-4 */
+  height: 428px;
   background-color: var(--logo-color-contrast);
 
   border-bottom-left-radius: 4px;
@@ -333,6 +361,7 @@ p, h1, h2, h3, h4, h5 {
 
 .team-mate-position {
   margin-top: 10px;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.19;
@@ -365,10 +394,24 @@ p, h1, h2, h3, h4, h5 {
 
 /* -------- Розмічаємо Підвал --------------------------------------------------------- */
 
+
+
 .page-footer {
   padding: 60px 0;
 
   background-color: var(--footer-color);
+}
+
+/* Об'еднаємо всі блоки в футері  */
+.footer-combiner
+{
+  display: flex;
+  align-items: center;
+}
+
+/* Блок лого, адрес телефон мейл */
+.footer-address-block {
+  margin-right: 70px;
 }
 
 .studio-address {
@@ -406,6 +449,36 @@ p, h1, h2, h3, h4, h5 {
 .footer-addr-text-style2 a:focus {
   color: var(--accent-color);
 }
+
+/* Футер блок: приєднуйся до нас в соц.мережах */
+
+.footer-follow-us {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-background-color);
+}
+
+.footer-our-socials-list {
+  display: flex;
+}
+
+.our-social-link {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.our-social-link:not(:last-of-type)
+{
+  margin-right: 0;
+}
+
 
 /* ==================== СТОРІНКА ПОРТФОЛІО =================================== */
 /* Стилізуємо портфоліо */
