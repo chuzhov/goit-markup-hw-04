@@ -3,13 +3,14 @@
   --article-text-color: #757575;
   --accent-color: #2196f3;
   --primary-background-color: rgb(255, 255, 255);
-  --hero-background-color: #d9d9d9;
+  --hero-background-color: rgba(47, 48, 58, 0.4);
+  --hero-fallback-color: #c4c4c4;
   --primary-background-color-transp: rgba(255, 255, 255, 0.6);
   --secondary-background-color: #f5f4fa;
   --border-color: #eeeeee;
 
   --header-line-color: #ececec;
-  --banner-color: #2f303a;
+  --footer-color: #2f303a;
 
   --logo-color-head: #2196f3;
   --logo-color-tail: #000000;
@@ -157,13 +158,19 @@ p, h1, h2, h3, h4, h5 {
 
 .hero {
   padding: 200px 0;
+
+  height: 600px;
   max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 
   text-align: center;
-
-  background-color: var(--hero-background-color); 
-  /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);*/
-  background-image: url("../images/hero-img.jpg");
+  
+  background-color: var(--hero-fallback-color);
+  background-image: linear-gradient(to right, var(--hero-background-color), var(--hero-background-color)), 
+                    url("../images/hero-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   
 }
 
@@ -361,7 +368,7 @@ p, h1, h2, h3, h4, h5 {
 .page-footer {
   padding: 60px 0;
 
-  background-color: var(--banner-color);
+  background-color: var(--footer-color);
 }
 
 .studio-address {
