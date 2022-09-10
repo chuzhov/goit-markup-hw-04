@@ -78,6 +78,18 @@ p, h1, h2, h3, h4, h5 {
   fill: currentColor;
 }
 
+.socials-horizontal-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  
+  border-radius: 50%;
+  
+}
+
 /* Розмічаємо лого студії */
 .text-logo-url {
   font-family: 'Raleway', 'Arial', sans-serif;
@@ -380,6 +392,16 @@ p, h1, h2, h3, h4, h5 {
   justify-content: center;
 }
 
+.team-mate .socials-horizontal-block {
+  color: var(--article-text-color);
+  background-color: var(--logo-color-contrast);
+}
+
+.team-mate .socials-horizontal-block:hover {
+  color: var(--logo-color-contrast);
+  background-color: var(--accent-color);
+}
+
 /* Sec 5  перелік постійних клієнтів  */
 
 .clients-list {
@@ -471,20 +493,14 @@ p, h1, h2, h3, h4, h5 {
   column-gap: 10px;
 }
 
-.our-social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  width: 44px;
-  height: 44px;
+
+.page-footer .socials-horizontal-block {
   color: var(--logo-color-contrast);
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  
 }
 
-.our-social-link:hover {
+.page-footer .socials-horizontal-block:hover {
   background-color: var(--accent-color);
 }
 
