@@ -74,6 +74,10 @@ p, h1, h2, h3, h4, h5 {
   list-style-type: none;
 }
 
+.icon {
+  fill: currentColor;
+}
+
 /* Розмічаємо лого студії */
 .text-logo-url {
   font-family: 'Raleway', 'Arial', sans-serif;
@@ -464,15 +468,24 @@ p, h1, h2, h3, h4, h5 {
 
 .footer-our-socials-list {
   display: flex;
+  column-gap: 10px;
 }
 
 .our-social-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 44px;
   height: 44px;
+  color: var(--logo-color-contrast);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  margin-right: 10px;
+  
+}
+
+.our-social-link:hover {
+  background-color: var(--accent-color);
 }
 
 /* ==================== СТОРІНКА ПОРТФОЛІО =================================== */
