@@ -157,6 +157,12 @@ p, h1, h2, h3, h4, h5 {
   margin-left: auto;
 }
 
+.email-phone-links {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
 .link-email-phone li:not(:last-child) {
   margin-right: 50px;
 }
