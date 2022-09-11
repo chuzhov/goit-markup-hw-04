@@ -7,7 +7,7 @@
   --hero-fallback-color: #c4c4c4;
   --primary-background-color-transp: rgba(255, 255, 255, 0.6);
   --secondary-background-color: #f5f4fa;
-  --border-color: #eeeeee;
+  --border-color-portfolio: #eeeeee;
   --button-border-color: #000000;
   --border-color: #afb1b8;
 
@@ -251,6 +251,8 @@ p, h1, h2, h3, h4, h5 {
   box-shadow: none;
   border-radius: 4px;
   cursor: pointer;
+
+  outline: none;
 }
 
 .filter-button.primary {
@@ -386,10 +388,11 @@ p, h1, h2, h3, h4, h5 {
   margin: 0;
   display: flex;
   justify-content: center;
+  opacity: transparent;
 }
 
 .team-mate .socials-horizontal-block {
-  color: var(--article-text-color);
+  color: var(--border-color);
   background-color: var(--logo-color-contrast);
 }
 
@@ -398,6 +401,7 @@ p, h1, h2, h3, h4, h5 {
 {
   color: var(--logo-color-contrast);
   background-color: var(--accent-color);
+  outline: transparent;
 }
 
 /* Sec 5  перелік постійних клієнтів  */
@@ -418,6 +422,7 @@ p, h1, h2, h3, h4, h5 {
   border: 1px solid var(--border-color);
   border-radius: 4px;
   color: var(--border-color);
+  outline: transparent;
 
   cursor: pointer;
 }
@@ -500,16 +505,15 @@ p, h1, h2, h3, h4, h5 {
   column-gap: 10px;
 }
 
-
-
 .page-footer .socials-horizontal-block {
   color: var(--logo-color-contrast);
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.page-footer .socials-horizontal-block:hover
+.page-footer .socials-horizontal-block:hover,
 .page-footer .socials-horizontal-block:focus {
   background-color: var(--accent-color);
+  outline: transparent;
 }
 
 /* ==================== СТОРІНКА ПОРТФОЛІО =================================== */
@@ -520,6 +524,7 @@ p, h1, h2, h3, h4, h5 {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  
 }
 .portfolio-filter-list li:not(:last-child) {
   margin-right: 8px;
@@ -537,9 +542,11 @@ p, h1, h2, h3, h4, h5 {
 .portfolio-item {
   height: 404px;
   background-color: var(--logo-color-contrast);
+  outline: none;
 }
 .portfolio-item:focus,
 .portfolio-item:hover {
+  outline: transparent;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
               0px 4px 4px rgba(0, 0, 0, 0.06), 
               1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -553,9 +560,9 @@ p, h1, h2, h3, h4, h5 {
 .portfolio-info {
   padding: 20px 24px;
 
-  border-right: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
-  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color-portfolio);
+  border-bottom: 1px solid var(--border-color-portfolio);
+  border-left: 1px solid var(--border-color-portfolio);
 }
 
 .portfolio-card-link {
